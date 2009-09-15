@@ -27,7 +27,9 @@
 ######################### END LICENSE BLOCK #########################
 
 module CharDet
-  class CodingStateMachine
+  class CodingStateMachine 
+    attr_accessor :active
+          
     def initialize(sm)
       @_mModel = sm
       @_mCurrentBytePos = 0
